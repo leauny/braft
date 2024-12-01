@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 ulimit -n 10000
 ulimit -c unlimited
@@ -14,16 +14,16 @@ exclude_peers=""
 for node in $nodes
 do
 	#echo $node
-	if [ -z $peers ];then
+	if [[ -z $peers ]];then
 		peers=$node
 	else
 		peers=$peers","$node
 	fi
 
-	if [ $node == $self_node ];then
+	if [[ $node == $self_node ]];then
 		continue
 	fi
-	if [ -z $exclude_peers ];then
+	if [[ -z $exclude_peers ]];then
 		exclude_peers=$node
 	else
 		exclude_peers=$exclude_peers","$node
