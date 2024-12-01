@@ -36,3 +36,7 @@ CTestTestfile.cmake
 
 # Github aciton
 !.github
+
+# TLC files
+tla/states/
+tla/*.toolbox/
