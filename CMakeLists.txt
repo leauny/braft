@@ -231,10 +231,10 @@ if(BUILD_UNIT_TESTS)
 endif()
 add_subdirectory(tools)
 
-# examples
-add_subdirectory(example/atomic)
-add_subdirectory(example/block)
-add_subdirectory(example/counter)
+# examples (after build braft, uncomment the following lines)
+# add_subdirectory(example/atomic)
+# add_subdirectory(example/block)
+# add_subdirectory(example/counter)
 
 file(COPY ${CMAKE_CURRENT_BINARY_DIR}/braft/
         DESTINATION ${CMAKE_CURRENT_BINARY_DIR}/output/include/braft/
